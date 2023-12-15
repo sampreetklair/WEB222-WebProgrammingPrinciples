@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+    <meta name="author" content="Sampreet Klair" />
+    <title>New Artist Request - Nostalgia Rock Music App</title>
+    <link rel="stylesheet" href="./css/water.css" />
+    <script defer src="./js/validate.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>New Artist Request for Nostalgia Rock Music App</h1>
+    </header>
+
+    <hr />
+
+    <main>
+    <h2>Request a New Artist</h2>
+    <form id="newArtistForm" action="https://httpbin.org/post" method="post" onsubmit="return validate();">
+
+    <label for="artistName">Artist's Name:</label>
+    <input type="text" id="artistName" name="artistName">
+  
+    <label for="musicGenre">Music Genre:</label>
+    <input list="genres" id="musicGenre" name="musicGenre">
+    <datalist id="genres">
+    <option value="Pop">
+    <option value="Rock">
+    <option value="Indie">
+    <option value="Classic">
+    <option value="Lofi">
+    </datalist>
+  
+    <label for="socialMediaUrls">Social Media URLs:</label>
+    <input type="text" id="socialMediaUrls" name="socialMediaUrls">
+  
+    <label for="songVideoLinks">Song/Video Links:</label>
+    <div id="songVideoLinksContainer">
+      <input type="text" name="songVideoLink" id="songVideoLink">
+      <button type="button">Add</button>
+    </div>
+  
+    <br>
+
+    <label>
+      <input type="checkbox" name="explicitLyrics" id="explicitLyrics"> Explicit Lyrics?
+    </label>
+  
+    <br><br>
+
+    <label for="artistDescription">Why should this artist be added?</label>
+    <textarea id="artistDescription" name="artistDescription" rows="4"></textarea>
+    <button type="submit">Submit Request</button>
+  </form>
+  
+    </main>
+
+    <footer style="text-align: center;">
+        © Sampreet Klair, 2023
+    </footer>
+
+    <script src="./js/new-artist.js"></script>
+  </body>
+</html>

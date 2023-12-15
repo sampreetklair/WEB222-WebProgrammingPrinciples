@@ -1,0 +1,37 @@
+/* External CSS */
+
+#id1{
+    color: darkgreen;
+    text-align: right;
+}
+
+p{
+    color: pink;
+    text-indent: 50px;
+    text-transform: capitalize;
+}
+
+#id2{
+    color: black;
+}
+
+.c2{
+    color: antiquewhite;
+    text-decoration: underline;
+    text-transform:uppercase;
+}
+
+/* This is an example of Grouping selector */
+h1,.c1{
+    text-align: center;
+}
+
+/* This is an example of Contextual selector */
+div.c1 h3{
+    text-align: left;
+}
+
+div p{
+    background-color: yellowgreen;
+    color: black;
+}
