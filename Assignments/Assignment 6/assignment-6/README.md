@@ -2,7 +2,7 @@
 
 NOTE: this assignment combines Assignment 5 and 6 into one, and is 2x the marks.
 
-## Introduction
+## Introduction 
 
 Please see detailed instructions in the comments within src/index.html and src/contact.html
 
